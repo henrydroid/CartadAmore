@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.jpuente.cartadamore.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D50000"
+        android:fontFamily="cursive"
+        android:text="Happy Valentines!"
+        android:textColor="#E3F2FD"
+        android:textSize="48sp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:id="@+id/messageText" />
+
+
+
+    <ImageView
+        android:src="@drawable/love_dog_brown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/messageText" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        app:rippleColor="#FFFFFF"
+        android:clickable="true"
+        android:src="@drawable/ic_launcher_dog" />
+
+</RelativeLayout>
